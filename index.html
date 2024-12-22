@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SongUniverse</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logoEntier.svg" alt="Logo SongUniverse" />
+        <ul>
+          <li>Collections</li>
+          <li>A propos</li>
+          <li>Contactez-nous</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="firstSection">
+        <h1>Explorez un univers sonore généré par l'IA</h1>
+        <button>Explorer</button>
+      </section>
+      <section id="secondSection">
+        <p>
+          Il est parfois dur de trouver le genre musical parfait qui convient à
+          nos goûts.<br />
+          Sur cette plateforme nous mettons en valeur des genres musicaux moins
+          connus.
+        </p>
+      </section>
+      <section id="thirdSection">
+        <h2>Collections</h2>
+        <section>
+          <img src="photos/collection-audio.png" alt="Collection 1" />
+          <img src="photos/collection-video.png" alt="Collection 2" />
+          <img src="photos/collection-artiste.png" alt="Collection 3" />
+        </section>
+      </section>
+      <section id="audios">
+        <h2>AUDIOS</h2>
+        <div class="audio-block">
+          <img src="photos/audio1.png" alt="Kapha" />
+          <div class="audio-details">
+            <h3>TITRE : Kapha</h3>
+            <p>Style : #carnatic</p>
+            <p>Artiste : Леонід Українець</p>
+            <audio controls>
+              <source src="audios/audio1.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+        <div class="audio-block">
+          <img src="photos/audio2.png" alt="Viola I" />
+          <div class="audio-details">
+            <h3>TITRE : Viola I</h3>
+            <p>Style : #handpan #dark #electro #cryptic #violin</p>
+            <p>Artiste : insaneruediger</p>
+            <audio controls>
+              <source src="audios/audio2.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+        <div class="audio-block">
+          <img src="photos/audio3.png" alt="SASA" />
+          <div class="audio-details">
+            <h3>TITRE : SASA</h3>
+            <p>Style : #maloya</p>
+            <p>Artiste : LarryP</p>
+            <audio controls>
+              <source src="audios/audio3.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </section>
+      <section id="fifthSection">
+        <h2>Vidéos</h2>
+        <div class="video-container">
+          <article>
+            <video controls>
+              <source src="videos/loficity.mp4" type="video/mp4" />
+            </video>
+            <h3>Loficity</h3>
+          </article>
+          <article>
+            <video controls>
+              <source src="videos/dragon.mp4" type="video/mp4" />
+            </video>
+            <h3>Dragon</h3>
+          </article>
+        </div>
+      </section>
+      <section id="artistesSection">
+        <h2>ARTISTES</h2>
+        <div class="gallery">
+          <img src="photos/artiste12.png" alt="Artiste 1" />
+          <img src="photos/artiste10.png" alt="Artiste 2" />
+          <img src="photos/artiste8.png" alt="Artiste 3" />
+          <img src="photos/artiste9.png" alt="Artiste 4" />
+          <img src="photos/artiste5.png" alt="Artiste 5" />
+          <img src="photos/artiste11.png" alt="Artiste 6" />
+          <img src="photos/artiste3.png" alt="Artiste 7" />
+          <img src="photos/artiste4.png" alt="Artiste 8" />
+          <img src="photos/artiste2.png" alt="Artiste 9" />
+          <img src="photos/artiste7.png" alt="Artiste 10" />
+          <img src="photos/artiste6.png" alt="Artiste 11" />
+          <img src="photos/artiste1.png" alt="Artiste 12" />
+        </div>
+      </section>
+      <section id="aboutSection">
+        <h2>A PROPOS</h2>
+        <img src="photos/about-us.png" alt="deux personnes souriantes" />
+        <h2><strong>“La musique est le reflet de l’âme”</strong></h2>
+        <p>
+          Éternelle insatisfaction nous ne nous retrouvons pas dans les genres
+          musicaux existants. Musiciens, chanteurs et compositeurs nous sommes
+          parcourus le monde en recherche de nouveaux genres, puis est venu
+          l’ère de l’IA...
+        </p>
+      </section>
+      <section id="contactSection">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>
+          Vous souhaitez contribuer à cette plateforme ? Envoyez-nous un message
+          et vos musiques !
+        </p>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="file">Envoyer une musique (optionnel)</label>
+          <input type="file" id="file" name="file" />
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright SongUniverse</p>
+    </footer>
+  </body>
+</html>

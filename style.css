@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  background: #f1d302;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#firstSection {
+  background: url("photos/cover.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 200px 20px 100px;
+}
+
+#firstSection h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+#firstSection button {
+  background: #c1292e;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+
+#firstSection button:hover {
+  background: #a12023;
+}
+
+#secondSection {
+  background: #161925;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 24px;
+}
+
+#thirdSection section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#thirdSection img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#artistesSection {
+  background-color: #eee;
+  padding: 50px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#aboutSection {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#aboutSection img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#aboutSection p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#contactSection {
+  background: #204c8c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#contactSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contactSection label {
+  text-align: left;
+  font-size: 16px;
+}
+
+#contactSection input,
+#contactSection textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contactSection input[type="file"] {
+  background-color: white;
+}
+
+#contactSection button {
+  background: #c1292e;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
+
+#contactSection button:hover {
+  background: #a12023;
+}
+
+footer {
+  background: #f1d302;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#fifthSection {
+  text-align: center;
+  padding: 20px;
+}
+
+#fifthSection h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.video-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-container video {
+  height: 500px;
+  object-fit: cover;
+}
+
+#audios {
+  background-color: #f4f6f8;
+}
+
+.audio-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #204c8c;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1700px;
+}
+
+.audio-block img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.audio-details {
+  flex: 1;
+}
+
+.audio-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.audio-details p {
+  font-size: 2rem;
+}
+
+.audio-block audio {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#thirdSection {
+  background-color: #fff;
+  padding: 50px 0;
+  width: 100%;
+}
+
+#thirdSection section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#thirdSection img {
+  flex: 1;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav::after {
+    content: "Menu";
+    display: block;
+    background-color: #f1d302;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  header nav[aria-expanded="true"] ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    font-size: 16px;
+  }
+
+  #firstSection {
+    padding: 100px 20px 50px;
+  }
+
+  #firstSection h1 {
+    font-size: 32px;
+  }
+
+  #firstSection button {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  #secondSection {
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+
+  #thirdSection section {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #thirdSection img {
+    width: 100%;
+    height: auto;
+  }
+
+  #artistesSection .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+
+  #artistesSection .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video-container article {
+    width: 100%;
+  }
+
+  .video-container video {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .audio-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .audio-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .audio-details {
+    width: 100%;
+  }
+
+  #contactSection form {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #contactSection button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
